@@ -1,16 +1,16 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    broS = require('browser-sync');
+    browserSync = require('browser-sync');
 
 gulp.task('browser-sync', function() {
-  broS({
+  browserSync({
     server:{
-      baseDir: 'css_4e/02'
+      baseDir: 'css_4e/app'
     }
   });
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch('css_4e/**/*.html', broS.reload);
-  gulp.watch('css_4e/**/*.css', broS.reload);
+  gulp.watch('css_4e/**/*.html', browserSync.reload);
+  gulp.watch('css_4e/**/*.css', browserSync.reload);
 });
