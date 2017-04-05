@@ -1,0 +1,24 @@
+{
+  "name": "css_4e",
+  "version": "1.0.0",
+  "description": "Файлы примеров к книге.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrightman/css_4e.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrightman/css_4e/issues"
+  },
+  "homepage": "https://github.com/mrightman/css_4e#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
