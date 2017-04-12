@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: 'css_4e/08'
+      baseDir: 'css_4e/08/03_bg_ex'
     }
   });
 });
