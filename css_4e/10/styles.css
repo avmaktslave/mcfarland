@@ -57,6 +57,7 @@ header {
     position: absolute;
     z-index: 100;
     left: 0;
+    animation: logo 3s;
 }
 
 header h1 {
@@ -84,7 +85,28 @@ nav a {
     border: 1px solid #c95e00;
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.7);
     text-shadow: 0px -1px 1px rgba(000, 000, 000, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.3);
+    transition: transform .5s, background-color 1s ease-in .5s, box-shadow .5s;
 }
 
 
 /* пользовательские стили  */
+
+nav a:hover{
+  transform: scale(1.5);
+  box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, .6);
+  background-color: rgb(200, 150, 0);
+}
+
+@keyframes logo {
+  from{
+    transform: rotate(0) scale(.5);
+    left: 120%;
+  }
+  50%{
+    transform: rotate(720deg) scale(.5);
+    left: 0;
+  }
+  to{
+    transform: rotate(0) scale(1);
+  }
+}
