@@ -19,23 +19,23 @@
     .wrap{
       display: flex;
       background-color: rgb(121, 121, 121);
-      max-width: 960px;
-      min-height: 500px;
+      max-width: 1200px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      min-height: 600px;
+      flex-flow: row nowrap;
+    }
+    .boxC{
+      flex: 2 1 50%;
+      background-color: rgb(2, 150, 153);
+      font-size: 1.8rem;
+      align-self: flex-start;
     }
     .box{
       background-color: rgb(29, 244, 194);
-      flex: 1;
-      margin: 1px;
-    }
-    .box2{
-      background-color: rgb(29, 244, 194);
-      flex: 1;
-      margin: 1px;
-    }
-    .box3{
-      background-color: rgb(29, 244, 194);
-      flex: 1;
-      margin: 1px;
+      flex: 1 1 25%;
+      margin: 5px;
+      font-size: 2rem;
     }
   </style>
   <script>
@@ -43,19 +43,19 @@
 </head>
 
 <body>
-  <div class="section">
-    <div class="banner">
+  <header class="section">
+    <nav class="banner">
       <p class="logo">Наша компания</p>
       <a href="#">Клиенты</a>
       <a href="#" class="highlight">О нас</a>
       <a href="#">Вакансии</a>
-    </div>
-  </div>
-  <div class="wrap">
+    </nav>
+  </header>
+  <section class="wrap">
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</div>
+    <div class="boxC">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptatibus numquam fugit ipsa voluptates dolores fuga ipsum dolor explicabo, labore ad quidem magni deleniti, praesentium obcaecati earum magnam iste nisi! ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="box"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-  </div>
+  </section>
 </body>
 
 </html>
